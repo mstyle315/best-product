@@ -1,0 +1,161 @@
+#orderform {
+	overflow: visible;
+	position: relative;
+	width:300px;
+	margin:0 auto;
+}
+#orderform label, .form-index label {
+	color: #000;
+	font: bold 14px Arial, Helvetica, sans-serif;
+	text-align:left;
+	display: block;
+	margin-left: 0;
+}
+#orderform input, #orderform select, #form-index input, #form-index select, textarea {
+	height: 30px;
+	border: 1px solid #1F9DD3;
+	padding: 3px;
+	margin: 0 0 8px 0px;
+	display:block;
+	width: 97%;
+	-ms-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+textarea {height: 80px !important;}
+#orderform input:focus, #form-index input:focus {
+	box-shadow: 0 0 5px red;
+	-webkit-box-shadow: 0 0 5px red;
+	-moz-box-shadow: 0 0 5px red;
+	border:1px solid red;
+}
+#orderform select {height:25px;}
+.form-index .rushOrder {
+	display: block;
+	/*background-color:#000;*/
+	border:none;
+	width: 330px;
+	text-transform:uppercase;
+	text-shadow: 1px 1px #000000;
+	/*font: bold 20px Verdana, Geneva, sans-serif;*/
+	overflow:hidden;
+	cursor:pointer;
+	margin: 0 auto;
+	color:#FFFFFF;
+}
+#form {visibility: hidden;}
+#orderform br {clear:both;}
+.tip {
+	position:absolute !important;
+	width: 150px;
+}
+.toolTip {
+	background: red;
+	border: thin solid red; /* change color here for the tooltip body border */
+	color: #fff;
+	left: 0px;
+	margin-top: 28px;
+	padding: 5px;
+	position: absolute;
+	text-align: center;
+	width: 150px;
+	z-index: 10;
+	border-radius: 4px;
+	font: bold 11px 'verdana';
+}
+.toolTipArrow {
+	border-color: transparent transparent red transparent; /* change color here for the triangle border */
+	border-style: solid;
+	border-width: 11px;
+	height:0px;
+	width:0px;
+	position:absolute;
+	top:-20px;
+	left:20px;
+	display:block;
+	content:"\00a0";
+}
+.toolTipArrow:before {
+	border-color: transparent transparent red transparent;
+	position:absolute;
+	top:-11px;
+	left:-12px;
+	border-style: solid;
+	border-width: 12px;
+	height:0px;
+	width:0px;
+	display:block;
+	content:"\00a0";
+}
+/*////////// FORM HU ///////////*/
+#formContainer {
+	width: 270px;
+	margin: 0 auto;
+	position: absolute;
+	top: 200px;
+	right: 30px;
+}
+.displayNone {
+	display:none;
+}
+
+.alert_message {
+	background-color: #ff0;
+	border: 5px dashed #f02773;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.address_alert {
+	background:#FF0 !important;
+	color:#000 !important;
+	width:370px !important;
+	border-color:#FF0 !important;
+	width:358px !important;
+}
+.arrowColor {
+	border-color: transparent transparent #ffd200 transparent !important;
+}
+.arrowColor:before {
+	border-color: transparent transparent #ffd200 transparent !important;
+}
+#shipping_areacode {
+	width:33px !important;
+	float:left;
+}
+#billing_phone {
+	width: 242px !important;
+	float: right;
+}
+#shipping_areacode {width:58px;}
+.rushOrder {
+	border: none;
+	border-radius: 8px;
+	color: white;
+	height: 52px;
+	padding: 0 20px;
+	font: bold 20px Verdana, Geneva, sans-serif;
+	text-shadow: 1px 1px #000000;
+	background-color: #4CAF50;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	text-transform:uppercase;
+	box-shadow: 0px 5px 10px #B0B0B0;
+}
+.within-24-hours-box {
+	width: 100%;
+	border: 3px dashed red;
+	background: yellow;
+	margin: 20px 0;
+}
+.within-24-hours-box p {
+	text-align: center;
+	padding: 0;
+	margin: 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.within-24-hours-box p span {font-weight: bold;}
